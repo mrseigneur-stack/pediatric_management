@@ -20,7 +20,7 @@
     """,
     'author': 'mrseigneur-stack',
     'website': 'https://github.com/mrseigneur-stack/pediatric_management',
-    'license': 'OPL-1',  # Changé en OPL-1 pour une compatibilité totale avec l'Odoo App Store
+    'license': 'LGPL-3',  # Changé en OPL-1 pour une compatibilité totale avec l'Odoo App Store
     'depends': [
         'base',
         'mail',
