@@ -34,22 +34,28 @@
                             </div>
                         </div>
 
-                        <div class="mt-5">
-                            <table class="table table-sm">
-                                <thead>
-                                    <tr>
-                                        <th>Médicament</th>
-                                        <th>Dosage / Instructions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr t-foreach="o.prescription_line_ids" t-as="line">
-                                        <td><span t-field="line.medication_id.name"/></td>
-                                        <td><span t-field="line.dosage_instruction"/></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+<div class="mt-5">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th style="width: 40%;">Médicament</th>
+                <th style="width: 60%;">Dosage / Instructions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <t t-foreach="o.prescription_line_ids" t-as="line">
+                <tr>
+                    <td>
+                        <span t-field="line.medication_id.name"/>
+                    </td>
+                    <td>
+                        <span t-field="line.dosage_instruction"/>
+                    </td>
+                </tr>
+            </t>
+        </tbody>
+    </table>
+</div>
 
                         <div class="mt-5 text-right">
                             <p>Dr. <span t-esc="user.name"/></p>

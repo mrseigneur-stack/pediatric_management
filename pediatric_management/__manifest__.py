@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Pediatric Practice Management',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.2',
     'category': 'Healthcare',
     'summary': 'Comprehensive management solution for pediatric clinics',
     'description': """
@@ -20,7 +20,7 @@
     """,
     'author': 'mrseigneur-stack',
     'website': 'https://github.com/mrseigneur-stack/pediatric_management',
-    'license': 'AGPL-3',  # Changé en OPL-1 pour une compatibilité totale avec l'Odoo App Store
+    'license': 'OPL-1',  # Changé en OPL-1 pour une compatibilité totale avec l'Odoo App Store
     'depends': [
         'base',
         'mail',

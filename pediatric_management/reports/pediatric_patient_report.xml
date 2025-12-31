@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Report Action -->
     <record id="action_report_patient" model="ir.actions.report">
         <field name="name">Fiche Patient</field>
         <field name="model">pediatric.patient</field>
@@ -11,7 +10,6 @@
         <field name="binding_type">report</field>
     </record>
 
-    <!-- Report Template -->
     <template id="report_patient_document">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="patient">
@@ -81,9 +79,9 @@
                                     <tbody>
                                         <t t-foreach="patient.consultation_ids.filtered(lambda c: c.state == 'done')[:10]" t-as="consultation">
                                             <tr>
-                                                <td t-field="consultation.consultation_date"/>
-                                                <td t-field="consultation.consultation_type"/>
-                                                <td t-field="consultation.diagnosis"/>
+                                                <td><span t-field="consultation.consultation_date"/></td>
+                                                <td><span t-field="consultation.consultation_type"/></td>
+                                                <td><span t-field="consultation.diagnosis"/></td>
                                                 <td><span t-field="consultation.weight"/> kg</td>
                                                 <td><span t-field="consultation.height"/> cm</td>
                                             </tr>
@@ -108,10 +106,10 @@
                                     <tbody>
                                         <t t-foreach="patient.vaccination_ids" t-as="vaccination">
                                             <tr>
-                                                <td t-field="vaccination.vaccine_id.name"/>
-                                                <td t-field="vaccination.vaccination_date"/>
-                                                <td t-field="vaccination.next_dose_date"/>
-                                                <td t-field="vaccination.state"/>
+                                                <td><span t-field="vaccination.vaccine_id.name"/></td>
+                                                <td><span t-field="vaccination.vaccination_date"/></td>
+                                                <td><span t-field="vaccination.next_dose_date"/></td>
+                                                <td><span t-field="vaccination.state"/></td>
                                             </tr>
                                         </t>
                                     </tbody>
