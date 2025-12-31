@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gestion Cabinet Pédiatrique</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4facfe;
+        }
+        .feature h3 {
+            color: #4facfe;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+        .feature ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .feature li {
+            margin: 8px 0;
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .screenshot {
+            background: #f1f3f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px dashed #ddd;
+        }
+        .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 10px;
+        }
+        .version {
+            background: #e8f5e8;
+            border: 1px solid #c3e6c3;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Gestion Cabinet Pédiatrique</h1>
+            <p>Solution complète pour la gestion de votre cabinet de pédiatrie</p>
+        </div>
+        
+        <div class="content">
+            <div class="version">
+                <strong>Version 1.0.0</strong> - Module complet et prêt à l'emploi pour Odoo 18
+            </div>
+            
+            <h2>🎯 Fonctionnalités Principales</h2>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>👶 Gestion des Patients</h3>
+                    <ul>
+                        <li>Fiches patients complètes avec informations parents</li>
+                        <li>Suivi de la croissance avec courbes automatiques</li>
+                        <li>Historique médical complet</li>
+                        <li>Gestion des allergies et contre-indications</li>
+                        <li>Calcul automatique de l'âge</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>📅 Planning Intelligent</h3>
+                    <ul>
+                        <li>Vue calendrier intuitive</li>
+                        <li>Types de RDV (consultation, vaccination, contrôle)</li>
+                        <li>Rappels automatiques aux parents</li>
+                        <li>Gestion des absences et annulations</li>
+                        <li>Programmation de RDV de contrôle</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>🩺 Consultations</h3>
+                    <ul>
+                        <li>Examens cliniques détaillés</li>
+                        <li>Suivi des mesures (poids, taille, température)</li>
+                        <li>Diagnostics et recommandations</li>
+                        <li>Intégration avec prescriptions</li>
+                        <li>Facturation automatique</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>💊 Prescriptions Intelligentes</h3>
+                    <ul>
+                        <li>Base de données médicaments pédiatriques</li>
+                        <li>Calcul automatique des dosages selon poids/âge</li>
+                        <li>Alertes sur les contre-indications</li>
+                        <li>Impression d'ordonnances professionnelles</li>
+                        <li>Suivi des traitements</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>💉 Suivi Vaccinal</h3>
+                    <ul>
+                        <li>Calendrier vaccinal automatique</li>
+                        <li>Alertes pour vaccins en retard</li>
+                        <li>Gestion des rappels</li>
+                        <li>Suivi des lots de vaccins</li>
+                        <li>Rapports de couverture vaccinale</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>💰 Facturation</h3>
+                    <ul>
+                        <li>Tarifs paramétrables par type de consultation</li>
+                        <li>Gestion des assurances et mutuelles</li>
+                        <li>Suivi des paiements et impayés</li>
+                        <li>Statistiques financières</li>
+                        <li>Intégration comptabilité Odoo</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2>📊 Tableau de Bord Avancé</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>📈 Statistiques Quantitatives</h3>
+                    <ul>
+                        <li>Nombre de patients par jour/semaine/mois</li>
+                        <li>Consultations et vaccinations réalisées</li>
+                        <li>Taux de présence aux RDV</li>
+                        <li>Évolution de l'activité</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>💹 Résultats Financiers</h3>
+                    <ul>
+                        <li>Chiffre d'affaires détaillé</li>
+                        <li>Répartition par type de consultation</li>
+                        <li>Taux de recouvrement</li>
+                        <li>Graphiques d'évolution</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2>🖼️ Aperçu des Écrans</h2>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <div class="icon">👶</div>
+                    <h4>Fiche Patient</h4>
+                    <p>Interface complète avec onglets pour consultations, RDV, prescriptions, vaccinations et courbe de croissance</p>
+                </div>
+                <div class="screenshot">
+                    <div class="icon">📅</div>
+                    <h4>Planning</h4>
+                    <p>Vue calendrier avec code couleur par type de RDV et gestion des créneaux</p>
+                </div>
+                <div class="screenshot">
+                    <div class="icon">🩺</div>
+                    <h4>Consultation</h4>
+                    <p>Saisie d'examen clinique avec mesures, diagnostic et prescription intégrée</p>
+                </div>
+                <div class="screenshot">
+                    <div class="icon">💊</div>
+                    <h4>Prescription</h4>
+                    <p>Ordonnance avec calcul automatique des dosages et impression professionnelle</p>
+                </div>
+                <div class="screenshot">
+                    <div class="icon">📊</div>
+                    <h4>Tableau de Bord</h4>
+                    <p>Statistiques en temps réel avec graphiques et alertes</p>
+                </div>
+                <div class="screenshot">
+                    <div class="icon">⚙️</div>
+                    <h4>Configuration</h4>
+                    <p>Paramétrage complet du cabinet, tarifs et notifications</p>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <h2>🚀 Prêt à Démarrer ?</h2>
+                <p>Ce module est entièrement fonctionnel et prêt à être installé dans votre instance Odoo 18.</p>
+                <p><strong>Installation simple en un clic !</strong></p>
+            </div>
+            
+            <h2>📋 Prérequis</h2>
+            <ul>
+                <li>Odoo 18.0 ou supérieur</li>
+                <li>Modules de base : account, calendar, contacts</li>
+                <li>Recommandé : report_xlsx pour les rapports Excel</li>
+            </ul>
+            
+            <h2>🆘 Support</h2>
+            <p>Module développé avec soin pour répondre aux besoins spécifiques des pédiatres. 
+            Interface intuitive et fonctionnalités pensées pour le quotidien médical.</p>
+            
+            <div style="text-align: center; margin-top: 40px; color: #666;">
+                <p><em>Gestion Cabinet Pédiatrique v1.0.0 - Conçu pour Odoo 18</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
