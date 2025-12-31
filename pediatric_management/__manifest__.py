@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Pediatric Practice Management',
-    'version': '18.0.1.0.0',  # Modifié pour correspondre à la série Odoo 18
+    'version': '18.0.1.0.0',
     'category': 'Healthcare',
     'summary': 'Comprehensive management solution for pediatric clinics',
     'description': """
-        A complete management module for pediatric practices including:
+        A complete management solution for pediatric practices including:
         - Patient management with detailed parent/guardian information
         - Smart appointment scheduling and planning
         - Clinical consultations with specialized medical examinations
@@ -20,6 +20,7 @@
     """,
     'author': 'mrseigneur-stack',
     'website': 'https://github.com/mrseigneur-stack/pediatric_management',
+    'license': 'OPL-1',  # Changé en OPL-1 pour une compatibilité totale avec l'Odoo App Store
     'depends': [
         'base',
         'mail',
@@ -67,7 +68,6 @@
     'installable': True,
     'auto_install': False,
     'application': True,
-    'license': 'LGPL-3',
     'images': ['static/description/icon.png'],
     'price': 0,
     'currency': 'EUR',
