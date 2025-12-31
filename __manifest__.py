@@ -1,24 +1,25 @@
+# -*- coding: utf-8 -*-
 {
-    'name': 'Gestion Cabinet Pédiatrique',
+    'name': 'Pediatric Practice Management',
     'version': '1.0.0',
     'category': 'Healthcare',
-    'summary': 'Module complet de gestion pour cabinet de pédiatrie',
+    'summary': 'Comprehensive management solution for pediatric clinics',
     'description': """
-        Module de gestion complète pour cabinet pédiatrique incluant :
-        - Gestion des patients avec informations parents
-        - Planning des rendez-vous intelligent
-        - Consultations avec examens cliniques
-        - Prescriptions avec calcul automatique des dosages
-        - Facturation et gestion des paiements
-        - Suivi vaccinal automatique
-        - Courbes de croissance
-        - Tableau de bord avec statistiques
-        - Configuration entièrement paramétrable
-        - Alertes et notifications automatiques
-        - Rapports détaillés
+        A complete management module for pediatric practices including:
+        - Patient management with detailed parent/guardian information
+        - Smart appointment scheduling and planning
+        - Clinical consultations with specialized medical examinations
+        - Medical prescriptions with automatic dosage calculation based on weight
+        - Billing and integrated payment management
+        - Automated vaccination tracking and schedule
+        - Pediatric growth charts (Weight/Height/Head Circumference)
+        - Interactive dashboard with clinical and financial statistics
+        - Fully customizable clinic configuration
+        - Automatic alerts and patient notifications
+        - Detailed medical and administrative reports
     """,
-    'author': 'Votre Cabinet',
-    'website': 'https://www.votre-cabinet.fr',
+    'author': 'mrseigneur-stack',
+    'website': 'https://github.com/mrseigneur-stack/pediatric_management',
     'depends': [
         'base',
         'mail',
@@ -29,19 +30,19 @@
         'report_xlsx'
     ],
     'data': [
-        # Sécurité
+        # Security
         'security/ir.model.access.csv',
-	'security/pediatric_security.xml',
+        'security/pediatric_security.xml',
         
-        # Données de base
+        # Base Data
         'data/ir_sequence_data.xml',
         'data/pediatric_medication_data.xml',
         'data/pediatric_vaccine_data.xml',
         'data/pediatric_config_data.xml',
         'data/pediatric_cron_data.xml',
         
-        # Vues
-	'views/pediatric_growth_views.xml',
+        # Views
+        'views/pediatric_growth_views.xml',
         'views/pediatric_patient_views.xml',
         'views/pediatric_appointment_views.xml',
         'views/pediatric_consultation_views.xml',
@@ -52,7 +53,7 @@
         'views/pediatric_dashboard_views.xml',
         'views/pediatric_menus.xml',
         
-        # Rapports
+        # Reports
         'reports/pediatric_prescription_report.xml',
         'reports/pediatric_patient_report.xml',
     ],
